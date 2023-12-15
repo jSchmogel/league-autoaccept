@@ -8,14 +8,18 @@ def autoclick():
         #print("Button")
         pyautogui.useImageNotFoundException()
         time.sleep(1)
-        while league_button_coords is None:
+        if league_button_coords is None:
             league_button_coords = pyautogui.locateOnScreen("partybutton2.png", grayscale=False, confidence=0.7)
             time.sleep(0.5)
         #print("Button Found!")
         accept_center = pyautogui.center(league_button_coords)
         print(accept_center)
         pyautogui.click(accept_center)
-
-
+        if accept_center:
+              autoclick()
+        else:
+              autoclick()
+         
+            
 autoclick()
 

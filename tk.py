@@ -14,8 +14,14 @@ task = tk.Label(status_canvas)
 task.pack(anchor=tk.E, side=tk.BOTTOM)
 
 def run():
-    
-        os.system('league_autoaccept.py')
+                os.system('league_autoaccept.py')
+                
+
+
+
+        
+         
+        
 
 
 #Title
